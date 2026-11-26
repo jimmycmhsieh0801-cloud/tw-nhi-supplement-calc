@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-71C7MD759Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-71C7MD759Q');
+    document.addEventListener('click', function(e) {
+      var a = e.target.closest('a.cta-btn, a.btn, a.lead-cta');
+      if (a) {
+        gtag('event', 'outbound_monetize_click', {
+          link_url: a.href,
+          link_text: (a.textContent || '').trim()
+        });
+      }
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 二代健保補充保費試算器 (2.11%)｜股利 2 萬與兼職 29,500 起扣試算</title>
+  <meta name="description" content="依 2026 最新健保署標準，一秒試算股利所得 (2萬元)、兼職薪資 (29,500元)、利息、租金與年終獎金 (4倍投保薪資) 應扣 2.11% 二代健保補充保費。" />
+  <meta name="keywords" content="二代健保補充保費計算機2026,2.11%補充保費,股利2萬扣健保,兼職29500補充保費,年終獎金4倍計算" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4296280593601685"
+     crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "2026 二代健保補充保費試算器",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TWD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "2026年股利多少錢會被扣二代健保補充保費？", "acceptedAnswer": {"@type": "Answer", "text": "依現行規定，單次發放股利（現金股利＋股票股利面額）達新台幣 20,000 元（含）以上時，會按全額扣繳 2.11% 二代健保補充保費；若單筆僅 19,999 元則完全免扣。"}}, {"@type": "Question", "name": "2026年兼職打工或外包接案多少錢會扣補充保費？", "acceptedAnswer": {"@type": "Answer", "text": "兼職薪資單次給付起扣點連動每月基本工資，2026 年為 29,500 元；執行業務收入（如稿費、設計費、接案酬勞）起扣點則為單筆 20,000 元，達標後皆依全額扣繳 2.11%。"}}, {"@type": "Question", "name": "存高股息 ETF 怎麼合法避開 2.11% 二代健保補充保費？", "acceptedAnswer": {"@type": "Answer", "text": "最常見做法是「分散配置不同季配/月配 ETF」或「將資金分散到不同除息月份的標的」，讓單檔單次配息金額壓在 20,000 元以下即可免扣 2.11%。"}}]}
+  </script>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --accent: #ea580c;
+      --accent-bg: #fff7ed;
+      --good: #059669;
+      --warn: #d97706;
+      --danger: #dc2626;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 20px 16px 48px; }
+    header { text-align: center; margin-bottom: 24px; }
+    header h1 { font-size: 1.6rem; margin: 0 0 8px; }
+    header p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    .badge {
+      display: inline-block; background: #e0f2fe; color: var(--primary-dark);
+      font-size: 0.78rem; font-weight: 600; padding: 3px 10px; border-radius: 999px; margin-bottom: 8px;
+    }
+    .tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+    .tab-btn {
+      padding: 12px; border: 1px solid var(--border); background: var(--card);
+      border-radius: 10px; font-size: 0.98rem; font-weight: 600; cursor: pointer; color: var(--muted);
+    }
+    .tab-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 20px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+    }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 680px) { .grid-2 { grid-template-columns: 1fr; } }
+    label { display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; }
+    input[type="number"], select {
+      width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; background: #fff;
+    }
+    .pill-group, .preset-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+    .pill, .chip {
+      padding: 7px 12px; border: 1px solid var(--border); background: #f8fafc;
+      border-radius: 8px; font-size: 0.86rem; font-weight: 600; cursor: pointer;
+    }
+    .pill.active { background: #e0f2fe; border-color: var(--primary); color: var(--primary-dark); }
+    .chip { border-radius: 999px; font-weight: 500; }
+    .chip:hover { border-color: var(--primary); color: var(--primary-dark); }
+    .result-box { margin-top: 18px; padding: 16px; border-radius: 12px; background: #f1f5f9; }
+    .result-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .metric { background: #fff; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border); }
+    .metric .label { font-size: 0.8rem; color: var(--muted); }
+    .metric .value { font-size: 1.3rem; font-weight: 700; margin-top: 2px; }
+    .metric .value.highlight { color: var(--primary-dark); }
+    .metric .value.good { color: var(--good); }
+    .metric .value.warn { color: var(--warn); }
+    .metric .value.danger { color: var(--danger); }
+    .gear-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+    .gear-card {
+      border: 1px solid var(--border); border-radius: 12px; padding: 14px;
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .gear-tag {
+      display: inline-block; font-size: 0.75rem; font-weight: 700; color: var(--accent);
+      background: var(--accent-bg); padding: 2px 8px; border-radius: 6px; margin-bottom: 6px;
+    }
+    .gear-card h3 { font-size: 1rem; margin: 0 0 6px; }
+    .gear-card p { font-size: 0.85rem; color: var(--muted); margin: 0 0 12px; }
+    .cta-btn {
+      display: block; text-align: center; padding: 9px 12px; border-radius: 8px;
+      background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; font-size: 0.9rem;
+    }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.88rem; }
+    th, td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: left; }
+    th { color: var(--muted); font-weight: 600; }
+    .seo-section h2 { font-size: 1.15rem; margin: 0 0 10px; }
+    .seo-section h3 { font-size: 1rem; margin: 18px 0 6px; color: var(--primary-dark); }
+    .seo-section p, .seo-section li { font-size: 0.92rem; color: #334155; }
+    .hidden { display: none; }
+    footer { text-align: center; font-size: 0.8rem; color: var(--muted); margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">依據 2026 健保署現行二代健保補充保費 2.11% 標準</div>
+      <h1>2026 二代健保補充保費試算器 (2.11%)</h1>
+      <p>領股利、領年終、兼職接案前先算一下！秒查是否踩到 20,000 / 29,500 元懸崖起扣門檻</p>
+    </header>
+
+    
+<section class="card">
+  <div class="grid-2">
+    <div><label for="incomeType">所得／給付類別</label>
+      <select id="incomeType">
+        <option value="dividend" selected>股利所得（單筆 ≥ 20,000 元起扣）</option>
+        <option value="interest">銀行利息所得（單筆 ≥ 20,000 元起扣）</option>
+        <option value="freelance">執行業務 / 稿費 / 租金（單筆 ≥ 20,000 元起扣）</option>
+        <option value="parttime">兼職薪資所得（2026 起扣點 ≥ 29,500 元）</option>
+        <option value="bonus">高額獎金（全年累計超過投保薪資 4 倍部分）</option>
+      </select>
+    </div>
+    <div><label for="payoutInput">本次單筆給付金額（元，或全年獎金總額）</label><input type="number" id="payoutInput" value="25000" min="0" step="1000" /></div>
+  </div>
+  <div id="bonusRow" class="hidden" style="margin-top:12px;">
+    <label for="insuredSalary">你的健保月投保金額（元，僅「高額獎金」類別需填，例如 42,000）</label>
+    <input type="number" id="insuredSalary" value="42000" min="29500" step="1000" />
+  </div>
+  <div class="result-box">
+    <div class="result-grid">
+      <div class="metric"><div class="label">是否達 2026 起扣門檻</div><div class="value" id="threshEl">--</div></div>
+      <div class="metric"><div class="label">二代健保補充保費 (2.11%)</div><div class="value warn" id="nhiFeeEl">--</div></div>
+      <div class="metric"><div class="label">扣費後實領淨額</div><div class="value good" id="netGetEl">--</div></div>
+    </div>
+    <div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <a class="cta-btn lead-cta" href="https://applydawho.sinopac.com/OpenAccount/OpenAccount?utm_source=dawhoapp&utm_medium=hyperlink&utm_term=nonpaid&utm_content=na&utm_campaign=mgm_202607&openExternalBrowser=1&tko=6U1H2HG" target="_blank" rel="noopener noreferrer nofollow" style="background:#0284c7;">開立永豐大戶＋大戶投（分散存月配/季配 ETF 避 2 萬扣費）→</a>
+      <a class="cta-btn lead-cta" href="https://richart.tw/TSDIB_RichartWeb/RC07/RC070100?sn=9Y63I&utm_source=richart&utm_medium=app&utm_campaign=richart_mgm_20230701" target="_blank" rel="noopener noreferrer nofollow" style="background:#ea580c;">閒置資金放 Richart 享 3.5%（月領息低於 2 萬免扣）→</a>
+    </div>
+  </div>
+</section>
+
+    <section class="card">
+      <h2 style="font-size: 1.15rem; margin: 0 0 6px;">合法分散配息與高利停泊省保費工具推薦</h2>
+      <p style="margin: 0 0 14px; color: var(--muted); font-size: 0.88rem;">透過低手續費定期定額分散配置多檔月配／季配 ETF，或搭配高利活存每月領息免扣補充保費（含合作推廣連結）</p>
+      <div class="gear-grid" id="gearGrid"></div>
+    </section>
+
+    <article class="card seo-section">
+      <h2>2026 二代健保補充保費 (2.11%) 六大所得起扣門檻總表</h2>
+      <p>依衛福部健保署現行規定，二代健保補充保費維持單次給付計算與 <strong>2.11%</strong> 費率（每筆給付最高計費上限為 1,000 萬元）。除了高額獎金是針對「超過投保金額 4 倍的部分」計費外，其餘五大類別皆採<strong>懸崖式全額起扣</strong>——只要剛好達到門檻，整筆金額都要扣 2.11%。</p>
+      <table>
+        <thead><tr><th>所得類別</th><th>2026 起扣門檻</th><th>計費方式 (2.11%)</th></tr></thead>
+        <tbody>
+          <tr><td>股利 / 利息 / 租金 / 執行業務</td><td>單筆 ≥ NT$ 20,000</td><td>達標即以「該筆全額」× 2.11%</td></tr>
+          <tr><td>兼職薪資所得</td><td>單筆 ≥ NT$ 29,500（基本工資）</td><td>達標即以「該筆全額」× 2.11%</td></tr>
+          <tr><td>高額獎金（年終/三節）</td><td>全年累計 > 月投保薪資 × 4 倍</td><td>僅針對「超過 4 倍部分」× 2.11%</td></tr>
+        </tbody>
+      </table>
+      <h3>常見問題 (FAQ)</h3>
+      <p><strong>Q1：2026 年股利多少錢會被扣二代健保補充保費？</strong><br>單次發放股利（現金股利加上股票股利面額 10 元計算）達 <strong>20,000 元（含）以上</strong>時，會扣繳全額的 2.11%（至少 422 元起）；若單筆領 19,999 元則完全免扣。</p>
+      <p><strong>Q2：2026 年兼職打工或外包接案多少錢會扣補充保費？</strong><br>兼職薪資單次給付起扣點為 <strong>29,500 元</strong>；執行業務收入（稿費、設計費、接案酬勞）則為 <strong>20,000 元</strong>。</p>
+      <p><strong>Q3：存高股息 ETF 怎麼合法避開 2.11% 補充保費？</strong><br>可透過「分散配置不同月配／季配 ETF」將單檔每次配息壓在 20,000 元以下；或是將部分資金停泊於每月給息的高利數位活存（單月利息幾乎不會超過 2 萬，免扣補充保費）。</p>
+    </article>
+
+    <footer>
+      <p>註：若股利配發包含「資本公積」或「海外所得(75/76類)」，依規定免計入二代健保補充保費；實際扣繳金額以配發單位通知書為準。 | <a href="https://jimmycmhsieh0801-cloud.github.io/">更多實用工具總目錄</a></p>
+      <div class="cross-nav" style="margin:12px auto;font-size:0.84rem;line-height:1.9;"><strong>🔥 熱門免費試算工具（共 19 站）：</strong><a href="https://jimmycmhsieh0801-cloud.github.io/tw-ecommerce-margin-calc/">蝦皮賣家毛利試算</a> · <a href="https://jimmycmhsieh0801-cloud.github.io/demo-b2b-quote.html">🔥 B2B報價與CSV彙整Demo</a> · <a href="https://jimmycmhsieh0801-cloud.github.io/tw-bank-interest-calc/">2026高利活存</a> · <a href="https://jimmycmhsieh0801-cloud.github.io/tw-stock-fee-calc/">台股2折手續費</a> · <a href="https://jimmycmhsieh0801-cloud.github.io/tw-labor-pension-calc/">勞退自提6%</a> · <a href="https://jimmycmhsieh0801-cloud.github.io/tw-income-tax-calc/">2026所得稅</a> · <a href="https://jimmycmhsieh0801-cloud.github.io/tw-mortgage-calc/">房貸寬限期</a> · <a href="https://jimmycmhsieh0801-cloud.github.io/tw-power-calc/">台電電費</a> · <a href="https://jimmycmhsieh0801-cloud.github.io/">🏠 全部 19 站總目錄</a></div>
+  <div class="lead-box" style="margin:14px auto 8px;padding:12px 14px;border:1px dashed #94a3b8;border-radius:10px;background:#f8fafc;max-width:720px;font-size:0.86rem;color:#334155;">💼 <strong>企業／個人客製化開發：</strong>需要 Excel 報價單轉網頁、Python 自動化爬蟲報表、或專屬試算工具（<strong>NT$ 1,800 起・3 天交付</strong>）？ <a class="lead-cta" href="https://jimmycmhsieh0801-cloud.github.io/services.html" style="color:#0284c7;font-weight:700;text-decoration:underline;">查看方案與 3 個實作 Demo →</a></div>
+    </footer>
+  </div>
+
+  <script src="affiliate_config.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if (typeof AFFILIATE_GEARS !== "undefined") {
+      const grid = document.getElementById("gearGrid");
+      if (grid && !grid.innerHTML.trim()) {
+        grid.innerHTML = AFFILIATE_GEARS.map(
+          (g) => `
+          <div class="gear-card">
+            <div>
+              <span class="gear-tag">${g.tag}</span>
+              <h3>${g.title}</h3>
+              <p>${g.desc}</p>
+            </div>
+            <a class="cta-btn" href="${g.url}" target="_blank" rel="noopener noreferrer nofollow">${g.cta} →</a>
+          </div>`
+        ).join("");
+      }
+    }
+  </script>
+</body>
+</html>
