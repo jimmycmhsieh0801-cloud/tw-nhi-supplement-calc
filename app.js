@@ -34,6 +34,22 @@ if (typeof document !== "undefined") {
     document.getElementById("netGetEl").textContent = `NT$ ${res.net.toLocaleString()}`;
   }
   [typeEl, payoutEl, insEl].forEach(el => el.addEventListener("input", render));
+  const copyBtn = document.getElementById("copyResultBtn");
+  if (copyBtn) {
+    copyBtn.addEventListener("click", () => {
+      const res = calcNhiSupplement(typeEl.value, payoutEl.value, insEl.value);
+      const typeText = typeEl.options[typeEl.selectedIndex].text;
+      const summary = `【2026 二代健保補充保費 (2.11%) 試算】\n類別：${typeText}｜單筆金額 NT$${Number(payoutEl.value).toLocaleString()}\n門檻判定：${res.triggered ? "已達標" : "免扣"}（起扣 NT$${res.threshold.toLocaleString()}）\n補充保費：NT$${res.fee.toLocaleString()}｜實領淨額：NT$${res.net.toLocaleString()}\n👉 免費試算：https://jimmycmhsieh0801-cloud.github.io/tw-nhi-supplement-calc/`;
+      const done = () => {
+        copyBtn.textContent = "✓ 已複製試算摘要，快去貼上分享！";
+        setTimeout(() => { copyBtn.textContent = "📋 一鍵複製試算結果摘要（貼到 Line 群 / Threads 討論）"; }, 2200);
+        if (typeof gtag === "function") gtag("event", "copy_result_summary", { tool: "tw-nhi-supplement-calc" });
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(summary).then(done).catch(() => {});
+      }
+    });
+  }
   render();
 }
 if (typeof module !== "undefined" && module.exports) module.exports = { calcNhiSupplement };
